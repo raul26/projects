@@ -1,0 +1,32 @@
+{
+  "name": "List",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "date"
+    },
+    "elemets": {
+      "type": [
+        "string"
+      ],
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "person": {
+      "type": "belongsTo",
+      "model": "Person",
+      "foreignKey": "personId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

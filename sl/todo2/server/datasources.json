@@ -1,0 +1,15 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mongoDs": {
+    "host": "127.0.0.1",
+    "port": 27017,
+    "database": "todo2",
+    "username": "developer",
+    "password": "",
+    "name": "mongoDs",
+    "connector": "mongodb"
+  }
+}
